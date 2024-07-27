@@ -6,6 +6,7 @@ Attempting to predict olympics water polo scores. Were only going to look at the
 There isn't that much data here I only used games against other olympic teams going back like a year and a half. I don't know if that's enough and I only have scores since I don't know how to get get metrics for handball. The scores were hand typed so there could be errors. I'm just going to walk through some of the code here the rest is in the files. 
 
 
+
 ```
 Score = Figure(size=(720,600))
 ax = Axis(Score[1,1],
@@ -49,13 +50,20 @@ This is the printing of the normal fit: Spain Def Score Normal{Float64}(μ=8.785
 
 
 The table turns out like are you vcat all the countries. 
- Row │ Name         TeamTotal  OppTotal  MeanTotal  MedianTotal  ModeTotal  Margin     MedianMargin  ModeMargin 
-     │ String       Float64    Float64   Float64    Float64      Int64      Float64    Float64       Int64      
 
-   1 │ France         7.36364  13.3636     20.7273         21.0         21  -6.0               -7.0          -7
-   2 │ China          9.0      14.3846     23.3846         23.0         23  -5.38462           -5.0         -13
-   3 │ Canada         8.9      12.9        21.8            20.5         20  -4.0               -3.5          -3
-   4 │ Australia      9.5      10.1        19.6            18.0         18  -0.6               -1.5          -2
+TeamTotal,OppTotal,MeanTotal,MedianTotal,ModeTotal,Margin,MedianMargin,ModeMargin
+France,7.363636363636363,13.363636363636363,20.727272727272727,21.0,21,-6.0,-7.0,-7
+China,9.0,14.384615384615385,23.384615384615383,23.0,23,-5.384615384615385,-5.0,-13
+Canada,8.9,12.9,21.8,20.5,20,-4.0,-3.5,-3
+Australia,9.5,10.1,19.6,18.0,18,-0.6,-1.5,-2
+Greece,11.4,10.933333333333334,22.333333333333332,24.0,26,0.4666666666666667,-1.0,-1
+Hungary,11.454545454545455,10.818181818181818,22.272727272727273,23.0,25,0.6363636363636364,-1.0,-1
+Italy,11.23076923076923,9.538461538461538,20.76923076923077,20.0,13,1.6923076923076923,1.0,6
+Netherlands,11.916666666666666,9.833333333333334,21.75,21.5,25,2.0833333333333335,1.5,1
+All,10.735537190082646,10.801652892561984,21.537190082644628,21.0,18,4.099173553719008,3.0,1
+USA,12.083333333333334,7.916666666666667,20.0,20.0,20,4.166666666666667,2.0,2
+Spain,13.285714285714286,8.785714285714286,22.071428571428573,21.5,21,4.5,4.5,8
+
 
 
 
