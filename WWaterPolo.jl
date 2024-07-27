@@ -1,10 +1,11 @@
 using CSV, DataFrames, StatsBase, Distributions, CairoMakie
-
+#Reads CSV Files
 Scores = CSV.read("WomensWPolo.csv", DataFrame)
 Adj = CSV.read("WAdjs.csv", DataFrame)
-show(Adj)
 
+#Prints a fit of a normal dist to all scores
 println(fit(Normal, Scores.Team1Score))
+#Plots all scores
 Score = Figure(size=(720,600))
 ax = Axis(Score[1,1],
     title = "Actual Scores of Womens Games",
@@ -14,7 +15,7 @@ ax = Axis(Score[1,1],
 hist!(Scores.Team1Score,  color=:blue)
 save("WomenScores.png", Score)
 
-
+#Creates a ome summary stats then stores them in a dataframe
 Scores.Total .= Scores.Team1Score .+ Scores.Team2Score
 Scores.TeamTotal .= Scores.Team1Score
 Scores.OppTotal .= Scores.Team2Score
@@ -33,7 +34,7 @@ Margin=MeanDiff, MedianMargin=MedianDiff, ModeMargin=ModeDiff)
 println("")
 
 
-
+#Gets country specific data stores in dataframe
 function GetCountry(Country::String)
     CountryDF = subset(Scores, :Team1 => team -> team .== Country)
     println(Country, " Off Score ",  fit(Normal, CountryDF.Team1Score))
@@ -66,12 +67,14 @@ Australia = GetCountry("Australia")
 Netherlands = GetCountry("Netherlands")
 Canada = GetCountry("Canada")
 
+#Vcats all countries into one dataframe
 Countries = vcat(BasicStats, Spain, Italy, Greece, USA, France, Hungary, Australia, Netherlands, Canada, China)
 sort!(Countries, :Margin)
 show(Countries)
 
 CSV.write("WomensBasicStats.csv", Countries)
 
+#Plots the countires and parameters given in the fucntion call
 function ScorePlot(TeamOne::String, OneOMean::Float64, OneOSTtd::Float64, OneOAdj::Float64, OneDMean::Float64, OneDStd::Float64, OneDAdj::Float64,
     TeamTwo::String, TwoOMean::Float64, TwoOStd::Float64, TwoOAdj::Float64, TwoDMean::Float64, TwoDStd::Float64, TwoDAdj::Float64)
     NorOne = round.(rand(Truncated(Normal(((OneOMean * OneOAdj) * .5) + ((TwoDMean * TwoDAdj) * .5),  (OneOSTtd * .5) + (TwoDStd * .5)), 0,25), 50_000))
