@@ -1,4 +1,3 @@
-[WomensBasicStats.csv](https://github.com/user-attachments/files/16398585/WomensBasicStats.csv)# OlyWaterPolo
 Attempting to predict olympics water polo scores. Were only going to look at the women but the appraoch is simple so I used a version of it for the men too. I'm going to show it with a normal distribution, I'll let you decide if you think that's correct or not, this is the team scores I have in the csv file above. 
 
 ![WomenScores](https://github.com/user-attachments/assets/b08a71ab-a759-44ad-a668-5e3f06ab5dce)
@@ -52,7 +51,7 @@ This is the printing of the normal fit: Spain Def Score Normal{Float64}(μ=8.785
 The table turns out like are you vcat all the countries. 
 
 
-[Uploading WomeName,TeamTotal,OppTotal,MeanTotal,MedianTotal,ModeTotal,Margin,MedianMargin,ModeMargin
+Name,TeamTotal,OppTotal,MeanTotal,MedianTotal,ModeTotal,Margin,MedianMargin,ModeMargin
 France,7.363636363636363,13.363636363636363,20.727272727272727,21.0,21,-6.0,-7.0,-7
 China,9.0,14.384615384615385,23.384615384615383,23.0,23,-5.384615384615385,-5.0,-13
 Canada,8.9,12.9,21.8,20.5,20,-4.0,-3.5,-3
@@ -64,7 +63,7 @@ Netherlands,11.916666666666666,9.833333333333334,21.75,21.5,25,2.083333333333333
 All,10.735537190082646,10.801652892561984,21.537190082644628,21.0,18,4.099173553719008,3.0,1
 USA,12.083333333333334,7.916666666666667,20.0,20.0,20,4.166666666666667,2.0,2
 Spain,13.285714285714286,8.785714285714286,22.071428571428573,21.5,21,4.5,4.5,8
-nsBasicStats.csv…]()
+
 
 
 
