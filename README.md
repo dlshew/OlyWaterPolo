@@ -1,4 +1,4 @@
-# OlyWaterPolo
+[WomensBasicStats.csv](https://github.com/user-attachments/files/16398585/WomensBasicStats.csv)# OlyWaterPolo
 Attempting to predict olympics water polo scores. Were only going to look at the women but the appraoch is simple so I used a version of it for the men too. I'm going to show it with a normal distribution, I'll let you decide if you think that's correct or not, this is the team scores I have in the csv file above. 
 
 ![WomenScores](https://github.com/user-attachments/assets/b08a71ab-a759-44ad-a668-5e3f06ab5dce)
@@ -51,19 +51,20 @@ This is the printing of the normal fit: Spain Def Score Normal{Float64}(μ=8.785
 
 The table turns out like are you vcat all the countries. 
 
- Row │ Name       │   TeamTotal │ OppTotal │ MeanTotal  │ MedianTotal │ ModeTotal │ Margin    │ MedianMargin  │ ModeMargin 
-     │ String     │   Float64   │ Float64  │ Float64    ││Float64     │ Int64     │ Float64   │ Float64       │Int64      
-   1 │ France     │     7.36364 │ 13.3636  │   20.7273  │       21.0  │       21  │ -6.0      │         -7.0  │       -7
-   2 │ China      │     9.0     │ 14.3846  │   23.3846  │       23.0  │       23  │ -5.38462  │         -5.0  │      -13
-   3 │ Canada     │     8.9     │ 12.9     │   21.8     │       20.5  │       20  │ -4.0      │         -3.5  │        -3
-   4 │ Australia  │     9.5     │ 10.1     │   19.6     │       18.0  │       18  │ -0.6      │         -1.5  │        -2
-   5 │ Greece     │    11.4     │ 10.9333  │   22.3333  │       24.0  │       26  │ 0.466667  │        -1.0   │       -1
-   6 │ Hungary    │    11.4545  │ 10.8182  │   22.2727  │       23.0  │       25  │ 0.636364  │      -1.0     │     -1
-   7 │ Italy      │    11.2308  │  9.53846 │   20.7692  │       20.0  │       13  │ 1.69231   │        1.0    │       6
-   8 │ Netherlands│    11.9167  │  9.83333 │   21.75    │       21.5  │       25  │ 2.08333   │         1.5   │       1
-   9 │ All        │    10.7355  │ 10.8017  │   21.5372  │       21.0  │       18  │ 4.09917   │         3.0   │       1
-  10 │ USA        │    12.0833  │  7.91667 │   20.0     │       20.0  │       20  │ 4.16667   │         2.0   │        2
-  11 │ Spain      │    13.2857  │  8.78571 │   22.0714  │       21.5  │       21  │ 4.5       │         4.5   │        8
+
+[Uploading WomeName,TeamTotal,OppTotal,MeanTotal,MedianTotal,ModeTotal,Margin,MedianMargin,ModeMargin
+France,7.363636363636363,13.363636363636363,20.727272727272727,21.0,21,-6.0,-7.0,-7
+China,9.0,14.384615384615385,23.384615384615383,23.0,23,-5.384615384615385,-5.0,-13
+Canada,8.9,12.9,21.8,20.5,20,-4.0,-3.5,-3
+Australia,9.5,10.1,19.6,18.0,18,-0.6,-1.5,-2
+Greece,11.4,10.933333333333334,22.333333333333332,24.0,26,0.4666666666666667,-1.0,-1
+Hungary,11.454545454545455,10.818181818181818,22.272727272727273,23.0,25,0.6363636363636364,-1.0,-1
+Italy,11.23076923076923,9.538461538461538,20.76923076923077,20.0,13,1.6923076923076923,1.0,6
+Netherlands,11.916666666666666,9.833333333333334,21.75,21.5,25,2.0833333333333335,1.5,1
+All,10.735537190082646,10.801652892561984,21.537190082644628,21.0,18,4.099173553719008,3.0,1
+USA,12.083333333333334,7.916666666666667,20.0,20.0,20,4.166666666666667,2.0,2
+Spain,13.285714285714286,8.785714285714286,22.071428571428573,21.5,21,4.5,4.5,8
+nsBasicStats.csv…]()
 
 
 
