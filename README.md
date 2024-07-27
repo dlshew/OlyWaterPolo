@@ -51,7 +51,7 @@ This is the printing of the normal fit: Spain Def Score Normal{Float64}(μ=8.785
 The table turns out like are you vcat all the countries. 
  Row │ Name         TeamTotal  OppTotal  MeanTotal  MedianTotal  ModeTotal  Margin     MedianMargin  ModeMargin 
      │ String       Float64    Float64   Float64    Float64      Int64      Float64    Float64       Int64      
-─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
    1 │ France         7.36364  13.3636     20.7273         21.0         21  -6.0               -7.0          -7
    2 │ China          9.0      14.3846     23.3846         23.0         23  -5.38462           -5.0         -13
    3 │ Canada         8.9      12.9        21.8            20.5         20  -4.0               -3.5          -3
