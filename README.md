@@ -3,7 +3,7 @@ Attempting to predict olympics water polo scores. Were only going to look at the
 
 ![WomenScores](https://github.com/user-attachments/assets/b08a71ab-a759-44ad-a668-5e3f06ab5dce)
 
-There isn't that much data here I only used games against other olympic teams going back like a year and a half. I don't kkow if that's enough and I only have scores since I don't know how to get get metrics for handball. The scores were hand typed so there could be errors. I'm just going to walk through some of the code here the rest is in the files. 
+There isn't that much data here I only used games against other olympic teams going back like a year and a half. I don't know if that's enough and I only have scores since I don't know how to get get metrics for handball. The scores were hand typed so there could be errors. I'm just going to walk through some of the code here the rest is in the files. 
 
 
 ```
@@ -90,7 +90,7 @@ end
 
 ```
 
-When you call ScorePlot("Netherlands", 11.916, 3.569, 1.00, 9.833, 3.157, 1.02, "Hungary", 11.454, 2.016, 1.02, 10.818, 3.270, .98) you get some descriptive stats and a plot of scores.
+When you call ScorePlot("Netherlands", 11.916, 3.569, 1.00, 9.833, 3.157, 1.02, "Hungary", 11.454, 2.016, 1.02, 10.818, 3.270, .98) you get some descriptive stats and a density plot of 50,000 sample from a normal distribution with those parameters.
 
 ![NormalWomenNetherlandsVsHungary](https://github.com/user-attachments/assets/1f251d27-1864-4117-8b49-79d1bb36add8)
 
