@@ -1,5 +1,5 @@
 # OlyWaterPolo
-Attempting to predict olympics water polo scores. Were only going to look at the women's but the appraoch is simple so I used a version of it for the men too. I'm going to show it with a normal distribution, I'll let you decide if you think that's correct or not, this is the team scores I have in the csv file above. 
+Attempting to predict olympics water polo scores. Were only going to look at the women but the appraoch is simple so I used a version of it for the men too. I'm going to show it with a normal distribution, I'll let you decide if you think that's correct or not, this is the team scores I have in the csv file above. 
 
 ![WomenScores](https://github.com/user-attachments/assets/b08a71ab-a759-44ad-a668-5e3f06ab5dce)
 
