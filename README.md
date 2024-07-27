@@ -48,23 +48,6 @@ This is the printing of the normal fit: Spain Def Score Normal{Float64}(μ=8.785
 
 
 
-The table turns out like are you vcat all the countries. 
-
-
-Name,TeamTotal,OppTotal,MeanTotal,MedianTotal,ModeTotal,Margin,MedianMargin,ModeMargin
-France,7.363636363636363,13.363636363636363,20.727272727272727,21.0,21,-6.0,-7.0,-7
-China,9.0,14.384615384615385,23.384615384615383,23.0,23,-5.384615384615385,-5.0,-13
-Canada,8.9,12.9,21.8,20.5,20,-4.0,-3.5,-3
-Australia,9.5,10.1,19.6,18.0,18,-0.6,-1.5,-2
-Greece,11.4,10.933333333333334,22.333333333333332,24.0,26,0.4666666666666667,-1.0,-1
-Hungary,11.454545454545455,10.818181818181818,22.272727272727273,23.0,25,0.6363636363636364,-1.0,-1
-Italy,11.23076923076923,9.538461538461538,20.76923076923077,20.0,13,1.6923076923076923,1.0,6
-Netherlands,11.916666666666666,9.833333333333334,21.75,21.5,25,2.0833333333333335,1.5,1
-All,10.735537190082646,10.801652892561984,21.537190082644628,21.0,18,4.099173553719008,3.0,1
-USA,12.083333333333334,7.916666666666667,20.0,20.0,20,4.166666666666667,2.0,2
-Spain,13.285714285714286,8.785714285714286,22.071428571428573,21.5,21,4.5,4.5,8
-
-
 
 
 
@@ -116,4 +99,4 @@ Median:         11.000000
 3rd Quartile:   14.000000
 Maximum:        25.000000
 
-You can code it to get the values in there but I chose not to so I can mess around with the values since the model is so simple. I want to be able to pass in different parameters to see on my own without going into the funtion and messing stuff up. Since there's only a few games every couple days its not a big time killer to type them in I think freedom > speed for this. Adjustments were art more than science but I tried to factor in some strenght of schedule feel free to really adjust those I didn't end up using those exaxtly. The function basically takes: offense mean score times an adjustment then takes a weighted average of that and the opponents defense of the same thing.  I'll admit I did not use a normal disttribution but I thought it was the best way to be able to share something. I specifiaclly don't expect this version to win and don't fully expect mine to either.
+You can code it to get the values in there but I chose not to so I can mess around with the values since the model is so simple. I want to be able to pass in different parameters to see on my own without going into the funtion and messing stuff up. Since there's only a few games every couple days its not a big time killer to type them in I think freedom > speed for this. Adjustments were art more than science but I tried to factor in some strenght of schedule feel free to really adjust those I didn't end up using those exaxtly. The function basically takes: offense mean score times an adjustment then takes a weighted average of that and the opponents defense of the same thing.  I'll admit I did not use a normal disttribution but I thought it was the best way to be able to share something. I specifiaclly don't expect this version to win and don't fully expect mine to either. There's a couple more things in the julia file but not much.
